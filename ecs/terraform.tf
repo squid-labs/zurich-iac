@@ -6,6 +6,7 @@ terraform {
     }
   }
 
+  # This adds backend terraform state to s3 bucket
   backend "s3" {
     bucket               = "dev-terraform-remote-backend-state-kl"
     key                  = "dev/core-services/ecs/terraform.tfstate"
